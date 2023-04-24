@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gra rytmiczna | Kwatera Secretmana</title>
+	<atom:link href="https://kwaterasecretmana.github.io/wpis/tag/gra-rytmiczna/feed/" rel="self" type="application/rss+xml" />
+	<link>https://kwaterasecretmana.github.io/</link>
+	<description>Kwatera Secretmana to autorski blog, na którym podsumowuję gry ukończone przeze mnie wraz z fragmentami rozgrywek i (dobrą) muzyką do omawianych tytułów.</description>
+	<lastBuildDate>Mon, 21 Aug 2023 18:49:23 +0000</lastBuildDate>
+	<language>pl-PL</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Metal: Hellsinger</title>
+		<link>https://kwaterasecretmana.github.io/wpis/metal-hellsinger/</link>
+		
+		<dc:creator><![CDATA[Secretman]]></dc:creator>
+		<pubDate>Sun, 19 Feb 2023 01:22:39 +0000</pubDate>
+				<category><![CDATA[Wpis]]></category>
+		<category><![CDATA[fps]]></category>
+		<category><![CDATA[gra]]></category>
+		<category><![CDATA[gra rytmiczna]]></category>
+		<category><![CDATA[recenzja]]></category>
+		<guid isPermaLink="false">https://localhost/wordpress/?p=511</guid>
+
+					<description><![CDATA[Często zdarzało mi się, że włączałem grę, o której mało wiedziałem, ale był jeden aspekt, który mnie przekonał do tego, żeby w ogóle spróbować &#8211; MUZYKA. Tak było w przypadku Metal: Hellsinger. O czym to była gra? Krążyliśmy po piekle jako demonicą zwaną Niewiadomą, której głos odebrała Czerwona Sędzina (diablica przez wielkie D jak głosił [&#8230;]<p><a href="https://kwaterasecretmana.github.io/wpis/metal-hellsinger/">Przeczytaj wpis</a></p><div><img width="300" height="169" src="https://kwaterasecretmana.github.io/wp-content/uploads/2023/02/Metal_-Hellsinger-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="Metal: Hellsinger" decoding="async" fetchpriority="high" srcset="https://kwaterasecretmana.github.io/wp-content/uploads/2023/02/Metal_-Hellsinger-300x169.jpg 300w, https://kwaterasecretmana.github.io/wp-content/uploads/2023/02/Metal_-Hellsinger-768x432.jpg 768w, https://kwaterasecretmana.github.io/wp-content/uploads/2023/02/Metal_-Hellsinger-1024x576.jpg 1024w, https://kwaterasecretmana.github.io/wp-content/uploads/2023/02/Metal_-Hellsinger-1536x864.jpg 1536w, https://kwaterasecretmana.github.io/wp-content/uploads/2023/02/Metal_-Hellsinger-2048x1152.jpg 2048w" sizes="(max-width: 300px) 100vw, 300px" /></div>]]></description>
+		
+		
+		<enclosure url="https://i.imgur.com/luri0U5.mp4" length="1690859" type="video/mp4" />
+<enclosure url="https://i.imgur.com/rfrvF66.mp4" length="14509630" type="video/mp4" />
+<enclosure url="https://i.imgur.com/e91z300.mp4" length="26021747" type="video/mp4" />
+
+			</item>
+	</channel>
+</rss>
