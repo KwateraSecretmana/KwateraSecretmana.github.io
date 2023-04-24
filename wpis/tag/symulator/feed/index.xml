@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>symulator | Kwatera Secretmana</title>
+	<atom:link href="https://kwaterasecretmana.github.io/wpis/tag/symulator/feed/" rel="self" type="application/rss+xml" />
+	<link>https://kwaterasecretmana.github.io/</link>
+	<description>Kwatera Secretmana to autorski blog, na którym podsumowuję gry ukończone przeze mnie wraz z fragmentami rozgrywek i (dobrą) muzyką do omawianych tytułów.</description>
+	<lastBuildDate>Tue, 23 Sep 2025 15:08:55 +0000</lastBuildDate>
+	<language>pl-PL</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Volcano Princess</title>
+		<link>https://kwaterasecretmana.github.io/wpis/volcano-princess/</link>
+		
+		<dc:creator><![CDATA[Secretman]]></dc:creator>
+		<pubDate>Tue, 23 Sep 2025 13:11:41 +0000</pubDate>
+				<category><![CDATA[Wpis]]></category>
+		<category><![CDATA[gra]]></category>
+		<category><![CDATA[point-and-click]]></category>
+		<category><![CDATA[recenzja]]></category>
+		<category><![CDATA[rpg]]></category>
+		<category><![CDATA[symulator]]></category>
+		<category><![CDATA[visual-novel]]></category>
+		<guid isPermaLink="false">https://kwaterasecretmana.github.io/?p=6190</guid>
+
+					<description><![CDATA[Czasami natrafiam na grę, która nie wydaje się być dla mnie, ale daję jej szansę, pogrywam kilka pierwszych godzin, aż w końcu, przy wyłączeniu pojawia mi się w głowie myśl &#8222;kurde, to jest dobra gra, jutro włączę ją ponownie&#8221;. Tą grą okazało się Volcano Princess, czyli chiński klon Princess Makera. W skrócie, jest to symulator [&#8230;]<p><a href="https://kwaterasecretmana.github.io/wpis/volcano-princess/">Przeczytaj wpis</a></p><div><img width="300" height="169" src="https://kwaterasecretmana.github.io/wp-content/uploads/2025/09/vp-thumb-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="Volcano Princess" decoding="async" fetchpriority="high" srcset="https://kwaterasecretmana.github.io/wp-content/uploads/2025/09/vp-thumb-300x169.jpg 300w, https://kwaterasecretmana.github.io/wp-content/uploads/2025/09/vp-thumb-1024x576.jpg 1024w, https://kwaterasecretmana.github.io/wp-content/uploads/2025/09/vp-thumb-768x432.jpg 768w, https://kwaterasecretmana.github.io/wp-content/uploads/2025/09/vp-thumb-1536x864.jpg 1536w, https://kwaterasecretmana.github.io/wp-content/uploads/2025/09/vp-thumb.jpg 1920w" sizes="(max-width: 300px) 100vw, 300px" /></div>]]></description>
+		
+		
+		<enclosure url="https://i.imgur.com/pQBijz7.mp4" length="0" type="video/mp4" />
+<enclosure url="https://i.imgur.com/H1OfgHc.mp4" length="0" type="video/mp4" />
+<enclosure url="https://i.imgur.com/XASSeVN.mp4" length="0" type="video/mp4" />
+<enclosure url="https://i.imgur.com/7AwKxw8.mp4" length="0" type="video/mp4" />
+
+			</item>
+	</channel>
+</rss>

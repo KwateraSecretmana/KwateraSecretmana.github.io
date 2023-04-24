@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rougelite | Kwatera Secretmana</title>
+	<atom:link href="https://kwaterasecretmana.github.io/wpis/tag/rougelite/feed/" rel="self" type="application/rss+xml" />
+	<link>https://kwaterasecretmana.github.io/</link>
+	<description>Kwatera Secretmana to autorski blog, na którym podsumowuję gry ukończone przeze mnie wraz z fragmentami rozgrywek i (dobrą) muzyką do omawianych tytułów.</description>
+	<lastBuildDate>Tue, 14 Oct 2025 10:35:10 +0000</lastBuildDate>
+	<language>pl-PL</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Metal Slug Tactics</title>
+		<link>https://kwaterasecretmana.github.io/wpis/metal-slug-tactics/</link>
+		
+		<dc:creator><![CDATA[Secretman]]></dc:creator>
+		<pubDate>Tue, 14 Oct 2025 10:35:09 +0000</pubDate>
+				<category><![CDATA[Wpis]]></category>
+		<category><![CDATA[gra]]></category>
+		<category><![CDATA[gra taktyczna]]></category>
+		<category><![CDATA[recenzja]]></category>
+		<category><![CDATA[rougelite]]></category>
+		<guid isPermaLink="false">https://kwaterasecretmana.github.io/?p=6226</guid>
+
+					<description><![CDATA[Ukończyłem grę na czasie, czyli Tacticsy. No dobra, tym razem chodziło mi o Metal Slug Tactics. Gra jest taktycznym roguelite, w którym wybieramy sobie trójkę bohaterów i wyruszamy powstrzymać armię rebeliantów prowadzoną przez Mordena, antagonistę, który pojawiał się w poprzednich grach tej serii. Można rzecz, że cała rozgrywka dzieje w duchu Metal Slug, ale tym [&#8230;]<p><a href="https://kwaterasecretmana.github.io/wpis/metal-slug-tactics/">Przeczytaj wpis</a></p><div><img width="300" height="169" src="https://kwaterasecretmana.github.io/wp-content/uploads/2025/10/mst-thumb-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="Metal Slug Tactics" decoding="async" fetchpriority="high" srcset="https://kwaterasecretmana.github.io/wp-content/uploads/2025/10/mst-thumb-300x169.jpg 300w, https://kwaterasecretmana.github.io/wp-content/uploads/2025/10/mst-thumb-1024x576.jpg 1024w, https://kwaterasecretmana.github.io/wp-content/uploads/2025/10/mst-thumb-768x432.jpg 768w, https://kwaterasecretmana.github.io/wp-content/uploads/2025/10/mst-thumb-1536x864.jpg 1536w, https://kwaterasecretmana.github.io/wp-content/uploads/2025/10/mst-thumb.jpg 1920w" sizes="(max-width: 300px) 100vw, 300px" /></div>]]></description>
+		
+		
+		<enclosure url="https://i.imgur.com/DOvzeLb.mp4" length="0" type="video/mp4" />
+<enclosure url="https://i.imgur.com/5yebC50.mp4" length="0" type="video/mp4" />
+<enclosure url="https://i.imgur.com/J2uUnsY.mp4" length="0" type="video/mp4" />
+<enclosure url="https://i.imgur.com/tTvDVbV.mp4" length="0" type="video/mp4" />
+
+			</item>
+	</channel>
+</rss>
