@@ -1,0 +1,206 @@
+let scrolling = false
+const sendPingFlag = true
+
+backgroundElement = document.querySelector('.bg')
+postHeaderTitleElement = document.querySelector('.post-header-title')
+postImageElements = document.querySelectorAll('.article-body img[srcset]')
+videoElements = document.querySelectorAll('video')
+iframeElements = document.querySelectorAll('iframe')
+infoElement = document.querySelector('.info')
+
+if (sendPingFlag) {
+  fetch('https://serwer2023.pl/ping/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: `page=${window.location.pathname}`
+  })
+}
+
+if (backgroundElement) {
+  window.addEventListener('scroll', () => {
+    scrolling = true
+  })
+}
+
+if (postHeaderTitleElement) {
+  const toggleTitleBackgroundOnResize = () => {
+    const postHeaderElement = document.querySelector('.post-header')
+    const postHeaderComputedStyle = window.getComputedStyle(postHeaderElement)
+    const postHeaderElementWidth = postHeaderElement.offsetWidth - parseFloat(postHeaderComputedStyle.paddingLeft) - parseFloat(postHeaderComputedStyle.paddingRight)
+    const postHeaderTitleElement = document.querySelector('.post-header-title')
+    const postHeaderImageElement = document.querySelector('.post-header-image')
+
+    if (postHeaderElementWidth - postHeaderImageElement.offsetWidth < postHeaderTitleElement.offsetWidth) {
+      postHeaderTitleElement.classList.add('post-header-title__background')
+    } else {
+      postHeaderTitleElement.classList.remove('post-header-title__background')
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", (event) => {
+    toggleTitleBackgroundOnResize()
+
+    setTimeout(toggleTitleBackgroundOnResize, 1500)
+  })
+
+  window.addEventListener('resize', () => {
+    if (typeof window.resizeWait != 'undefined') {
+      clearTimeout(window.resizeWait)
+    }
+    window.resizeWait = setTimeout(() => {
+      toggleTitleBackgroundOnResize()
+    }, 50)
+  })
+}
+
+if (postImageElements) {
+  postImageElements.forEach(image => {
+    const srcset = image.srcset.split(',')
+    const lastUrl = srcset[srcset.length - 1].split(' ')[1]
+    const parent = image.parentNode
+    let wrapper = Object.assign(document.createElement('a'), {
+      className: 'image-full-size',
+      href: lastUrl,
+      target: '_blank'
+    })
+    parent.replaceChild(wrapper, image)
+    wrapper.appendChild(image)
+  })
+}
+
+if (videoElements) {
+  videoElements.forEach(video => {
+    if (window.matchMedia("(max-width: 767px)").matches) {
+      video.removeAttribute('autoplay')
+      video.pause()
+    }
+
+    const parent = video.parentNode
+    let wrapper = Object.assign(document.createElement('div'), {
+      className: 'video',
+      innerHTML: `
+        <button class="video-button-sound" data-src="${video.src}" aria-label="Dźwięk"></button>
+        <button class="video-button-play" data-src="${video.src}" aria-label="Odtwarzaj"></button>`
+    })
+    parent.replaceChild(wrapper, video)
+    wrapper.appendChild(video)
+    video.style.visibility = 'visible'
+
+    video.addEventListener('play', video => {
+      let button = document.querySelector(`.video-button-play[data-src="${video.target.src}"]`)
+      button.classList.add('video-button-play__on')
+    })
+  })
+
+  document.querySelectorAll('.video-button-sound').forEach(button => {
+    button.addEventListener('click', button => {
+      button.target.classList.toggle('video-button-sound__on')
+      let video = document.querySelector(`video[src="${button.target.dataset.src}"]`)
+      video.muted = !video.muted
+    })
+  })
+
+  document.querySelectorAll('.video-button-play').forEach(button => {
+    button.addEventListener('click', button => {
+      button.target.classList.add('video-button-play__on')
+      let video = document.querySelector(`video[src="${button.target.dataset.src}"]`)
+      video.play()
+    })
+  })
+}
+
+if (iframeElements) {
+  function getYouTubeId(url) {
+    url = url.split(/(vi\/|v%3D|v=|\/v\/|youtu\.be\/|\/embed\/)/);
+    return undefined !== url[2] ? url[2].split(/[^0-9a-z_\-]/i)[0] : url[0];
+  }
+
+  iframeElements.forEach(iframe => {
+    const parent = iframe.parentNode
+    let wrapper = Object.assign(document.createElement('div'), {
+      className: 'iframe',
+    })
+    parent.replaceChild(wrapper, iframe)
+
+    if (iframe.dataset.src) {
+      if (typeof YT === 'undefined') {
+        let youtubeApiScript = document.createElement('script')
+        youtubeApiScript.type = 'text/javascript'
+        youtubeApiScript.src = '//www.youtube.com/iframe_api'
+        youtubeApiScript.defer = true
+        document.head.appendChild(youtubeApiScript)
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting === true) {
+          const youTubeId = getYouTubeId(iframe.dataset.src)
+          let ext, vi_ext, quality = 'sd'
+          if (iframe.dataset.jpg) {
+            vi_ext = ''
+            ext = 'jpg'
+          } else {
+            vi_ext = '_webp'
+            ext = 'webp'
+          }
+          quality = iframe.dataset.quality ?? quality
+
+          wrapper.style.backgroundImage = `url(//i.ytimg.com/vi${vi_ext}/${youTubeId}/${quality}default.${ext})`
+
+          wrapper.addEventListener('click', button => {
+            iframe.src = iframe.dataset.src
+            wrapper.appendChild(iframe)
+            let counter = 0
+            const playVideoAfterLoadIframe = setInterval(() => {
+              if (iframe.id || counter == 3) {
+                iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*')
+                clearInterval(playVideoAfterLoadIframe)
+              }
+              counter++
+            }, 500)
+          }, { once: true })
+
+          observer.unobserve(entries[0].target)
+        }
+      }, {threshold: 0})
+      observer.observe(wrapper)
+    } else {
+      wrapper.appendChild(iframe)
+    }
+  })
+}
+
+if (infoElement) {
+  setTimeout(() => {
+    const cookieObj = new URLSearchParams(document.cookie.replaceAll("&", "%26").replaceAll("; ", "&"))
+    if (cookieObj.get("accept") != 1) {
+      infoElement.classList.add('info__show')
+    }
+  }, 5000)
+
+  document.querySelector('.info-button').addEventListener('click', button => {
+    infoElement.classList.remove('info__show')
+
+    let date = new Date();
+    date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = "accept=1;" + expires + "; path=/";
+  })
+}
+setInterval(() => {
+  if (scrolling) {
+    scrolling = false
+    const scrollPosition = window.scrollY
+    const documentHeight = document.querySelector('body').scrollHeight
+    let objectPosition = parseInt((scrollPosition / (documentHeight - window.innerHeight)) * 100)
+    objectPosition = objectPosition > 100 ? 100 : objectPosition
+    document.querySelector('.bg').style.objectPosition = '50% ' + objectPosition + '%'
+  }
+}, 50)
+
+
+
+
+
+
