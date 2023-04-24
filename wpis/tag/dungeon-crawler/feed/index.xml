@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dungeon-crawler | Kwatera Secretmana</title>
+	<atom:link href="https://kwaterasecretmana.github.io/wpis/tag/dungeon-crawler/feed/" rel="self" type="application/rss+xml" />
+	<link>https://kwaterasecretmana.github.io/</link>
+	<description>Kwatera Secretmana to autorski blog, na którym podsumowuję gry ukończone przeze mnie wraz z fragmentami rozgrywek i (dobrą) muzyką do omawianych tytułów.</description>
+	<lastBuildDate>Mon, 15 Dec 2025 12:09:40 +0000</lastBuildDate>
+	<language>pl-PL</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.9</generator>
+	<item>
+		<title>Etrian Odyssey HD</title>
+		<link>https://kwaterasecretmana.github.io/wpis/etrian-odyssey-hd/</link>
+		
+		<dc:creator><![CDATA[Secretman]]></dc:creator>
+		<pubDate>Mon, 15 Dec 2025 11:00:13 +0000</pubDate>
+				<category><![CDATA[Wpis]]></category>
+		<category><![CDATA[dungeon-crawler]]></category>
+		<category><![CDATA[gra]]></category>
+		<category><![CDATA[jrpg]]></category>
+		<category><![CDATA[recenzja]]></category>
+		<category><![CDATA[rpg]]></category>
+		<guid isPermaLink="false">https://kwaterasecretmana.github.io/?p=6484</guid>
+
+					<description><![CDATA[Zabrałem się w ostatnim czasie za Etrian Odyssey 1 HD i fajnie mi się grało, ale niewątpliwie jest to tytuł Atlusa dla pewnego grona koneserów. Mowa w końcu o dungeon crawlerze. Grze, w której tworzymy drużynę bohaterów z kilku dostępnych klas (np. wojownicy, magowie, łucznicy) i anime-avatarów (weź im wszystkim wymyślaj imiona), a następnie wyruszamy [&#8230;]]]></description>
+		
+		
+		<enclosure url="https://i.imgur.com/URMK800.mp4" length="0" type="video/mp4" />
+<enclosure url="https://i.imgur.com/wTa9Ixg.mp4" length="0" type="video/mp4" />
+<enclosure url="https://i.imgur.com/ZvwxahG.mp4" length="0" type="video/mp4" />
+
+			</item>
+	</channel>
+</rss>
